@@ -1,0 +1,21 @@
+/* styles.css */
+
+/* General styles for the injected toggles */
+.dndb-toggles-container {
+    /* For now, inline styles handle most of the placeholder look,
+       but we can use this class to override D&D Beyond's native styles if needed */
+    user-select: none;
+}
+
+.dndb-toggles-container input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.dndb-toggles-container label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}

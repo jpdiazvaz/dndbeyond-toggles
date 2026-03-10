@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "DnD Beyond Toggles",
+  "version": "1.0",
+  "description": "Customizable toggles for D&D Beyond character sheets",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.dndbeyond.com/characters/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.dndbeyond.com/characters/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
